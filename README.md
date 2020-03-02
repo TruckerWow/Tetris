@@ -3,20 +3,13 @@
 
 ![Tetris](https://github.com/TruckerWow/Tetris/blob/master/Tetris.gif)
 
+<img src="https://github.com/TruckerWow/Tetris/blob/master/Tetris.gif" width = 300>
+
 pic from http://www.kosbie.net/cmu/fall-19/15-112/notes/notes-tetris/2_7_RemovingFullRows.html
 
 
 
-.nodata{
-margin: auto;
-position: absolute;
-top: 0;
-left: 0;
-bottom: 0;
-right: 0;
-}
 
-<img src="Tetris.gif" class="nodata">
 
 
 
