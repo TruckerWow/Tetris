@@ -1,7 +1,8 @@
 # Tetris
 
 
-![aaa](https://github.com/TruckerWow/Tetris/blob/master/Teris.gif)
+![Tetris](https://github.com/TruckerWow/Tetris/blob/master/Tetris.gif)
+pic from http://www.kosbie.net/cmu/fall-19/15-112/notes/notes-tetris/2_7_RemovingFullRows.html
 
 ```
 #################################################
