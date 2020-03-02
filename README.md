@@ -3,8 +3,6 @@
 ```
 #################################################
 
-#################################################
-
 import cs112_f19_week7_linter
 import math, copy, random
 
@@ -12,24 +10,7 @@ from cmu_112_graphics import *
 from tkinter import *
 import random
 
-#################################################
-# Helper functions
-#################################################
 
-def almostEqual(d1, d2, epsilon=10**-7):
-    # note: use math.isclose() outside 15-112 with Python version 3.5 or later
-    return (abs(d2 - d1) < epsilon)
-
-import decimal
-def roundHalfUp(d):
-    # Round to nearest with ties going away from zero.
-    rounding = decimal.ROUND_HALF_UP
-    # See other rounding options here:
-    # https://docs.python.org/3/library/decimal.html#rounding-modes
-    return int(decimal.Decimal(d).to_integral_value(rounding=rounding))
-
-#################################################
-# Functions for you to write
 #################################################
 
 def playTetris():
@@ -100,8 +81,6 @@ def moveFallingPiece(app,drow,dcol):
         return False
     return True
 
-
-
 def placeFallingPiece(app):
     rows = app.fallingPieceRowSize
     cols = app.fallingPieceColSize
@@ -130,7 +109,6 @@ def removeFullRows(app):
         newboard.insert(0,[app.emptyColor]*app.cols)
     app.board = newboard
     app.score += fullRows**2
-
 
 def timerFired(app):
     if app.timerDelay >200:
@@ -229,7 +207,6 @@ def drawFallingPiece(app,canvas):
                 drawCell(app, canvas, app.fallingPieceRow+row, 
                         app.fallingPieceCol+col, fill)
 
-#from https://www.cs.cmu.edu/~112/notes/notes-animations-part1.html
 def getCellBounds(app, row, col):
     gridWidth  = app.width - 2*app.margin
     gridHeight = app.height - 2*app.margin
@@ -250,7 +227,6 @@ def drawCell(app, canvas, row, col, fill):
     (x0, y0, x1, y1) = getCellBounds(app, row, col)
     canvas.create_rectangle(x0, y0, x1, y1, fill=fill,width=4)
     
-
 def redrawAll(app, canvas):
     #drawCell(0, 0, app.width, app.height, fill='orange')
     canvas.create_rectangle(0, 0, app.width, app.height, fill='orange')
@@ -270,8 +246,6 @@ def redrawAll(app, canvas):
         text='You died!',font='Arial 20 bold',fill='yellow')
     
 
-
-#print(playTetris()[0])
 runApp(width=playTetris()[0], height=playTetris()[1])
 
 #################################################
