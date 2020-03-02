@@ -2,7 +2,8 @@
 
 
 ![Tetris](https://github.com/TruckerWow/Tetris/blob/master/Tetris.gif)
-pic from http://www.kosbie.net/cmu/fall-19/15-112/notes/notes-tetris/2_7_RemovingFullRows.html
+
+\n pic from http://www.kosbie.net/cmu/fall-19/15-112/notes/notes-tetris/2_7_RemovingFullRows.html
 
 ```
 #################################################
